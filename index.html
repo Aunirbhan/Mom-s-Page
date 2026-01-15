@@ -4,78 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rina's Page">
-    <title>Rina's Page</title>
+    <meta name="description" content="Rina Das - Personal Page">
+    <title>Rina Das</title>
     <link rel="stylesheet" href="assets/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Header -->
-        <section class="hero">
-            <h1>Rina Das</h1>
-            <p style="opacity: 0.9; font-weight: 200; font-size: 1.2rem;"></p>
+    <!-- Fullscreen Hero with Floating Card -->
+    <section class="hero">
+        <div class="business-card">
+            <div class="profile-img-container">
+                <img src="assets/img/mom_profile.png" alt="Rina Das" class="profile-img">
+            </div>
 
-            <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 3rem;">
-                <a href="https://www.instagram.com/nyuconcretecanoe/" target="_blank" class="btn"
-                    style="border-radius: 50%; width: 64px; height: 64px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">
-                    <i class="fa fa-instagram"></i>
+            <h1>Rina Das</h1>
+            <p>New Yorker • Mother • Chef</p>
+
+            <div class="social-links">
+                <a href="https://venmo.com/u/Rina-Das-1" target="_blank" class="social-bubble">
+                    <img src="assets/img/venmo_logo.png" alt="Venmo">
                 </a>
-                <a href="mailto:nyuconcretecanoe@gmail.com" class="btn"
-                    style="border-radius: 50%; width: 64px; height: 64px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">
-                    <i class="fa fa-envelope"></i>
+                <a href="https://cash.app/$RinaDas1" target="_blank" class="social-bubble">
+                    <img src="assets/img/cash_app_logo.png" alt="Cash App">
                 </a>
-                <a href="assets/files/sponsorship.pdf.zip" target="_blank" class="btn"
-                    style="border-radius: 50%; width: 64px; height: 64px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">
-                    <i class="fa fa-heart"></i>
+                <a href="javascript:void(0)" onclick="openZelle()" class="social-bubble">
+                    <img src="assets/img/zelle_logo.png" alt="Zelle">
+                </a>
+                <a href="mailto:rinapauldas39@gmail.com" target="_blank" class="social-bubble">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
-        </section>
+        </div>
 
-        <!-- Parallax Section-->
-        <section>
-            <div class="card">
+        <!-- Hint for scrolling -->
+        <div
+            style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); opacity: 0.5; animation: bounce 2s infinite;">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Content revealed on scroll -->
+    <div class="content-wrapper">
+        <section class="reveal-section" id="story">
+            <div class="description-card">
                 <h2>Rina's Story</h2>
                 <p>
-                    This page was created for my mother, Rina—a strong and beautiful woman born in Bangladesh,
+                    This page was created for my mom, Rina. She is a strong and beautiful woman born in Bangladesh,
                     carrying countless stories from her childhood in a vibrant and bountiful country.
                 </p>
-
                 <p>
                     In pursuit of her dream to start a family in America, she immigrated to New York City with
                     her husband Debasish, where together they raised two sons Aurnab and Aunirbhan and took on every
-                    burden they could if it
-                    meant giving their sons the opportunity to succeed.
+                    burden they could if it meant giving their sons the opportunity to succeed.
                 </p>
-
                 <p>
                     Though the journey was never easy, their sacrifices allowed me to grow up, be educated, and
-                    chase my ambitions in the best city in the world. I am endlessly proud of
-                    my parents and deeply grateful for the life they worked so hard to build.
+                    chase my dreams in the best city in the world. I am endlessly proud of my parents and deeply
+                    grateful for the life they worked so hard to build.
                 </p>
-
                 <p>
                     Now, I am using the coding skills I’ve begun developing in school to help my mom pursue the
                     dreams she once had to put aside while supporting mine. Help her fund her dreams through the links
                     above.
                 </p>
-
                 <p>
                     This page exists to share her story, help her stay connected, and allow those who believe in
                     her journey to offer support. Feel free to reach out.
                 </p>
-
             </div>
         </section>
-    </main>
+
+        <section class="reveal-section" id="gallery">
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="placeholder">Coming Soon: Rina's Cooking</div>
+                </div>
+                <div class="image-card">
+                    <div class="placeholder">Coming Soon: Family Memories</div>
+                </div>
+                <div class="image-card">
+                    <div class="placeholder">Coming Soon: Where you should visit in NYC</div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p> Made my Aunirbhan Das. Keep up with my work on <a href="https://github.com/Aunirbhan/">GitHub</a> or reach
-            out to be directly through <a href="mailto:aunirbhan.das21@gmail.com">email</a></p>
+        <p>Made with ❤️ by <a href="malito:aunirbhan.das21@gmail.com">Aunirbhan Das.</a> Find more of my work <a
+                href="https://github.com/Aunirbhan">here</a>.</p>
     </footer>
 
+    <style>
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+    </style>
+
+    <!-- Zelle Modal -->
+    <div id="zelle-modal" class="modal-overlay" onclick="closeZelle(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <h3>Zelle Pay</h3>
+            <p>Support Rina via Zelle using the phone number below:</p>
+            <div class="zelle-number" id="phone-number">(646) 564-2009</div>
+            <div class="modal-actions">
+                <button class="btn-primary" onclick="copyZelle()">Copy Number</button>
+                <button class="btn-secondary" onclick="closeZelle()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="copy-toast" class="copy-success">Number copied to clipboard!</div>
+
+    <script>
+        // Modal Logic
+        function openZelle() {
+            document.getElementById('zelle-modal').classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+
+        function closeZelle(e) {
+            document.getElementById('zelle-modal').classList.remove('active');
+            document.body.style.overflow = ''; // Re-enable scroll
+        }
+
+        function copyZelle() {
+            const phone = document.getElementById('phone-number').innerText;
+            navigator.clipboard.writeText(phone).then(() => {
+                const toast = document.getElementById('copy-toast');
+                toast.classList.add('visible');
+                setTimeout(() => {
+                    toast.classList.remove('visible');
+                }, 2000);
+            });
+        }
+
+        // Simple Intersection Observer for reveal effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Parallax effect for the hero card
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroCard = document.querySelector('.business-card');
+            if (heroCard) {
+                heroCard.style.transform = `translateY(${scrolled * 0.3}px)`;
+                heroCard.style.opacity = 1 - (scrolled / 700);
+            }
+        });
+    </script>
 </body>
 
 </html>
