@@ -26,9 +26,6 @@ The goal of this page is to:
 Everything is designed to be clean, minimal, and respectful.
 
 ## Future Vision
-
-If this page proves successful in helping my mom raise money and build momentum toward her goals, I plan to expand this idea into a broader service.
-
 The long-term vision is to create a platform that allows patrons to fund personal dreams or savings goals, with a focus on:
 
 - Hardworking women
